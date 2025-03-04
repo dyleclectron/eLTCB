@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 int q[3]={0,0,0},iq=0,note[3]={' ','P','Q'};
 int fx(int a[],int x,int n)
 {
