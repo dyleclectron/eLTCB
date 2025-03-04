@@ -14,7 +14,7 @@ int to_8(int n)
     if (n==0) return 0;
     else 
     {
-        to_2(n/8);
+        to_8(n/8);
         printf("%d",n%8);
     }
     return 0;
@@ -25,7 +25,7 @@ int to_16(int n)
     if (n==0) return 0;
     else 
     {
-        to_2(n/16);
+        to_8(n/16);
         printf("%c",a[n%16]);
     }
     return 0;
