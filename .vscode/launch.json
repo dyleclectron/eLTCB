@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/LTCB/Ex1",
-      "program": "d:/LTCB/Ex1/build/Debug/outDebug",
+      "cwd": "d:/LTCB/Ex7",
+      "program": "d:/LTCB/Ex7/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
