@@ -1,0 +1,8 @@
+A=[7,1,2,10,20]
+Max=A[0]
+for i in range(len(A)):
+    print(i)
+    if A[i]>Max:
+        
+        Max==A[i]
+print(Max)
