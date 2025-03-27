@@ -14,7 +14,7 @@ void* sieve_prime() {
     return prime;
 }
 
-int unit(int n, int m, int a[1001][1001]) {
+int unit(int n, int m, int a[100][100]) {
     for (int i = 0; i < n; i++)
         for (int j = 0; j < m; j++) {
             if (i == j && a[i][j] != 1)
@@ -25,7 +25,7 @@ int unit(int n, int m, int a[1001][1001]) {
     return 1;
 }
 
-int symmetric(int n, int m, int a[1001][1001]) {
+int symmetric(int n, int m, int a[100][100]) {
     for (int i = 0; i < n; i++)
         for (int j = 0; j < m; j++) {
             if (a[i][j] != a[j][i])
@@ -85,19 +85,17 @@ void main() {
         for (int i = 0; i < n; i++) sum += a[i][i];
         printf("\nTong trung binh cac phan tu tren duong cheo chinh la: %.2f", sum / n);
     }
-    for (int i = 0; i < n; i++)
-        for (int j = 0; j < m - 1; j++)
-            for (int k = j + 1; k < m; k++)
-                if (a[i][j] > a[i][k]) {
-                    int tmp = a[i][j];
-                    a[i][j] = a[i][k];
-                    a[i][k] = tmp;
-                }
+    for(int i=0;i<m;i++)
+        for(int j=i+1;j<m;j++)
+            if(a[1][i]>a[1][j]) {
+                int tmp=a[1][i];
+                a[1][i]=a[1][j];
+                a[1][j]=tmp;
+            }
     printf("\nMa tran sau khi sap xep hang 2 la:\n");
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++)
             printf("%d ", a[i][j]);
         printf("\n");
     }
-    return 0;
 }
